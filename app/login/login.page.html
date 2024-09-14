@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+  <!-- Botón de Ingresar -->
+  <ion-button expand="full" color="primary" (click)="login()">Ingresar</ion-button>
+
+  <!-- Botón de Recuperar Contraseña -->
+  <ion-button expand="full" fill="clear" color="medium" (click)="goToResetPassword()">Recuperar Contraseña</ion-button>
+</ion-content>
